@@ -19,7 +19,6 @@ function Home({menu}:HomeProps): JSX.Element {
             <Rating rating={rating} isEditable setRating={setRating}/>
             <ul>
                 {menu.map(m => {
-                    console.log(m)
                     return (
                         <li key={m._id.secondCategory}>{m._id.secondCategory}</li>
                     )
@@ -48,12 +47,3 @@ interface HomeProps extends Record<string, unknown>{
     menu: MenuItem[];
     firstCategory: number;
 }
-
-// export const getStaticProps = async () => {
-//     let {data} = await axios('https://jsonplaceholder.typicode.com/users');
-//     return {
-//         props: {
-//             data
-//         }
-//     }
-// }
