@@ -8,10 +8,9 @@ import {ProductModel} from "../../interfaces/product.interface";
 const firstCategory = 0;
 
 const Course = ({menu, page, products}: CourseProps): JSX.Element => {
-  console.log(menu)
   return (
     <>
-
+      {page.title}
     </>
   )
 }
